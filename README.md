@@ -1,27 +1,37 @@
-# Game Instructions
 
-* Working on AI gamemode...
+# AI Chess with Stockfish
 
-- Entry point: main.py
-- Press 't' to change theme (green, brown, blue, gray)
-- Press 'r' to restart the game
+This project integrates Stockfish into a Python-based chess engine. It allows players to:
+- Analyze board positions using Stockfish.
+- Get the best suggested moves.
+- Save game history in PGN format.
+- Play with an AI opponent at a configurable Elo level.
 
-# Game Snapshots
+## Installation
 
-## Snapshot 1 - Start (green)
-![snapshot1](snapshots/snapshot1.png)
+1. Install dependencies:
+   ```bash
+   pip install pygame python-chess
+   ```
 
-## Snapshot 2 - Start (brown)
-![snapshot2](snapshots/snapshot2.png)
+2. Download and install Stockfish:
+   - [Stockfish Official Site](https://stockfishchess.org/download/)
 
-## Snapshot 3 - Start (blue)
-![snapshot3](snapshots/snapshot3.png)
+3. Update `stockfish_config.py` with the correct path to the Stockfish binary.
 
-## Snapshot 4 - Start (gray)
-![snapshot4](snapshots/snapshot4.png)
+## Usage
 
-## Snapshot 5 - Valid Moves
-![snapshot5](snapshots/snapshot5.png)
+To start the game, run:
+```bash
+python src/main.py
+```
 
-## Snapshot 6 - Castling
-![snapshot6](snapshots/snapshot6.png)
+## Features
+
+- **Stockfish Analysis**: Provides real-time analysis and move suggestions.
+- **PGN Save**: Stores game history in PGN format.
+- **Configurable Strength**: Adjust the AI's Elo rating for different skill levels.
+
+## License
+
+This project is open-source and free to use.
